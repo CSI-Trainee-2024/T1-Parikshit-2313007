@@ -8,6 +8,10 @@
   font-family: "Heebo", sans-serif;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 /* COMMON */
 
 .flex {

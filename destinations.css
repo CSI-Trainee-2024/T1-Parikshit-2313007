@@ -54,3 +54,57 @@ video {
   background-color: #00affe;
   transform: scale(1.1);
 }
+
+/* OFFERS*/
+
+.offers .head1 {
+  margin-top: -8rem;
+}
+
+.offer-card-container {
+  display: flex;
+  padding: 5px 5px;
+  margin-top: 1.6rem;
+  margin-bottom: 1rem;
+  overflow-x: scroll;
+}
+
+.offer-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  min-width: 32rem;
+  padding: 1rem;
+  margin-right: 2.5rem;
+}
+
+.offer-card img {
+  height: 10rem;
+}
+
+.offer-text h3 {
+  font-size: 1.5rem;
+}
+
+.offer-text p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.offer-text button {
+  margin-top: 1.3rem;
+  padding: 10px;
+  background-color: #00affe;
+  font-size: 1.1rem;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.offer-text button:hover {
+  color: #00affe;
+  background-color: #fff;
+  border: #00affe 1px solid;
+}
