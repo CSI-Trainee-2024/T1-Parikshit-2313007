@@ -67,6 +67,7 @@ video {
   margin-top: 1.6rem;
   margin-bottom: 1rem;
   overflow-x: scroll;
+  margin-bottom: 5rem;
 }
 
 .offer-card {
@@ -107,4 +108,70 @@ video {
   color: #00affe;
   background-color: #fff;
   border: #00affe 1px solid;
+}
+
+/* EXPLORE INDIA */
+
+.d-card-container {
+  margin-top: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d-card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  width: 20rem;
+  padding: 7px;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  color: #333a73;
+}
+
+.d-card img {
+  width: 100%;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.d-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: -1px;
+}
+
+.d-card p {
+  font-size: 0.9rem;
+  color: #544c4c;
+}
+
+.d-card-text {
+  padding: 10px 15px;
+}
+
+.d-card img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.foot .num {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.foot i {
+  font-size: 2.5rem;
+  transform: rotate(45deg);
+}
+.foot i:hover {
+  color: #00affe !important;
+  transform: scale(1.1) rotate(45deg);
+  cursor: pointer;
 }
