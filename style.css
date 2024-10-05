@@ -254,3 +254,40 @@
   font-size: 15px;
   margin-top: 1.3rem;
 }
+
+.option-grp {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.option img {
+  object-fit: cover;
+  border-radius: 35%;
+  height: 15vw;
+  width: 15vw;
+  opacity: 1;
+}
+
+.option img:hover {
+  opacity: 0.9;
+}
+
+.option:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.option p {
+  font-size: 3.4vw;
+  text-align: center;
+  font-family: "Comforter Brush", system-ui;
+  color: #333a73;
+}
