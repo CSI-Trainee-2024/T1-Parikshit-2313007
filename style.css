@@ -345,11 +345,13 @@
 .cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
 
 .card {
+  min-width: 18rem;
   width: 30%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
@@ -411,6 +413,24 @@
   color: #9bb7c8;
   font-size: 15px;
   padding-bottom: 2rem;
+}
+
+@media (width<=1080px) {
+  .cards {
+    justify-content: space-around;
+  }
+  .card {
+    margin-bottom: 3rem;
+  }
+  .left-right {
+    margin: 0;
+  }
+}
+
+@media (width<=800px) {
+  .card {
+    min-width: 20rem;
+  }
 }
 
 /* REVIEWS */
