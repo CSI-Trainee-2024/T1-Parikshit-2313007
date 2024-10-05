@@ -449,7 +449,10 @@
 
 .review-card img {
   border-radius: 100%;
-  height: 15rem;
+  height: 15%;
+  min-width: 40%;
+  width: 30%;
+  margin-bottom: auto;
   margin-right: 4rem;
 }
 
@@ -490,4 +493,20 @@
 }
 #dot {
   opacity: 1;
+}
+
+@media (width<=900px) {
+  .review-card {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .review-card img {
+    width: 60%;
+    margin-left: 21%;
+  }
+
+  .name {
+    position: relative;
+  }
 }
