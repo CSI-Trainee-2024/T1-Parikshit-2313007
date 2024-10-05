@@ -4,6 +4,16 @@
   font-family: "Heebo", sans-serif;
 }
 
+/* COMON */
+
+.flex {
+  display: flex;
+}
+
+.container {
+  padding: 0 10%;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -99,9 +109,6 @@
 }
 
 /*  HERO  */
-.container {
-  padding: 0 10%;
-}
 
 @media (width <= 700px) {
   .container {
@@ -222,13 +229,13 @@
   margin-top: 4rem;
 }
 
-.categories .head1 {
+.head1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.categories .head1 p {
+.head1 p {
   font-family: "Abril Fatface", system-ui;
   color: #333a73;
   font-size: 3.5rem;
@@ -248,7 +255,7 @@
   font-size: 3.5rem;
 }
 
-.categories .about {
+.about {
   color: #9bb7c8;
   width: 40%;
   font-size: 15px;
@@ -289,5 +296,89 @@
   font-size: 3.4vw;
   text-align: center;
   font-family: "Comforter Brush", system-ui;
+  color: #00affe;
+}
+
+/* TOURS */
+
+.tours {
+  margin-top: 4rem;
+}
+
+.tours .head1 p {
+  font-family: "Abril Fatface", system-ui;
   color: #333a73;
+  font-size: 3.5rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.card {
+  height: 30rem;
+  width: 23rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 280px;
+  border-radius: 10px 10px 0 0;
+  opacity: 1;
+}
+
+.card:hover {
+  opacity: 0.9;
+}
+
+.price {
+  background-color: #00affe;
+  color: #fff;
+  border-radius: 5px;
+  padding: 4px;
+  font-size: 14px;
+}
+
+.rating {
+  background-color: #ffc436;
+  border-radius: 5px;
+  padding: 0 3px;
+  margin-left: 2rem;
+}
+
+.card .flex {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.card i {
+  margin-top: 7.5px;
+}
+
+.card-text {
+  margin-top: 1rem;
+  padding: 0 10%;
+}
+
+.card-about {
+  font-weight: 700;
+  color: #5a6972f6;
+  font-size: 18px;
+}
+
+.card:hover {
+  .card-about {
+    color: #00affe;
+  }
+}
+
+.card-location {
+  margin-top: 1.5rem;
+  color: #9bb7c8;
+  font-size: 15px;
 }
