@@ -14,6 +14,12 @@
   padding: 0 10%;
 }
 
+@media (width <= 700px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -109,12 +115,6 @@
 }
 
 /*  HERO  */
-
-@media (width <= 700px) {
-  .container {
-    padding: 0 5%;
-  }
-}
 
 .hero {
   display: flex;
@@ -242,7 +242,7 @@
 }
 
 .left-right {
-  margin-right: 10rem;
+  margin-right: 8%;
   margin-top: 4px;
   color: #333a73;
   cursor: pointer;
@@ -257,7 +257,7 @@
 
 .about {
   color: #9bb7c8;
-  width: 40%;
+  width: 50%;
   font-size: 15px;
   margin-top: 1.3rem;
 }
@@ -266,6 +266,7 @@
   margin-top: 4rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .option {
@@ -278,7 +279,9 @@
 .option img {
   object-fit: cover;
   border-radius: 35%;
+  min-height: 9rem;
   height: 15vw;
+  min-width: 10rem;
   width: 15vw;
   opacity: 1;
 }
@@ -293,10 +296,38 @@
 }
 
 .option p {
-  font-size: 3.4vw;
+  font-size: 300%;
   text-align: center;
   font-family: "Comforter Brush", system-ui;
   color: #00affe;
+}
+
+@media (width<=800px) {
+  .left-right {
+    display: none;
+  }
+  .about {
+    width: 80%;
+  }
+  .option p {
+    margin-bottom: 1rem;
+  }
+  .option img {
+    min-width: 15rem;
+    min-height: 15rem;
+  }
+}
+
+@media (width <= 533px) {
+  .option-grp {
+    justify-content: space-around;
+  }
+  .option img {
+    min-width: 20rem;
+    min-height: 20rem;
+    border-radius: 10%;
+    /* margin-left: 2%; */
+  }
 }
 
 /* TOURS */
@@ -319,15 +350,13 @@
 }
 
 .card {
-  height: 30rem;
-  width: 23rem;
+  width: 30%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
 }
 
 .card img {
-  width: 100%;
-  height: 280px;
+  max-width: 100%;
   border-radius: 10px 10px 0 0;
   opacity: 1;
 }
@@ -381,6 +410,7 @@
   margin-top: 1.5rem;
   color: #9bb7c8;
   font-size: 15px;
+  padding-bottom: 2rem;
 }
 
 /* REVIEWS */
