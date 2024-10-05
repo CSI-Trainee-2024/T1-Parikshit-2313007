@@ -107,16 +107,25 @@ video {
 .offer-text button:hover {
   color: #00affe;
   background-color: #fff;
-  border: #00affe 1px solid;
+  border: #00affe 2px solid;
 }
 
 /* EXPLORE INDIA */
 
+.view-all {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  padding-right: 4rem !important;
+  color: #544c4c !important;
+  cursor: pointer !important;
+}
+
 .d-card-container {
   margin-top: 2rem;
-  padding-left: 2rem;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 3rem;
 }
 
 .d-card {
@@ -125,6 +134,7 @@ video {
   width: 20rem;
   padding: 7px;
   margin-right: 2rem;
+  margin-left: 2rem;
   margin-bottom: 1rem;
   color: #333a73;
 }
@@ -174,4 +184,79 @@ video {
   color: #00affe !important;
   transform: scale(1.1) rotate(45deg);
   cursor: pointer;
+}
+
+/* Tour Guide */
+
+.tour-guide .head {
+  text-align: center;
+  font-family: "Comforter Brush", system-ui;
+  color: #00affe;
+  font-size: 6vw;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.tg-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tg-card img {
+  object-fit: cover;
+  width: 20rem;
+  height: 23rem;
+  border-radius: 2rem;
+}
+
+.tg-rating {
+  background-color: #fff;
+  padding: 1px 8px;
+  border-radius: 10px;
+  width: fit-content;
+  position: relative;
+  top: -21.5rem;
+  left: 1.5rem;
+}
+
+.tg-text {
+  color: #fff;
+  position: relative;
+  top: -9rem;
+  left: 1.5rem;
+}
+
+.tg-text h3 {
+  font-size: 1.6rem;
+}
+
+.tg-price {
+  display: flex;
+}
+
+.tg-price h4 {
+  margin-right: 6px;
+}
+
+.tg-btn {
+  padding: 10px;
+  background-color: #00affe;
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.tg-btn:hover {
+  color: #00affe;
+  background-color: #fff;
+  border: #00affe 2px solid;
+}
+
+.tc {
+  margin-top: -4rem;
+  text-align: center;
+  margin-bottom: 4rem;
 }
