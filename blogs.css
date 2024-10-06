@@ -3,11 +3,67 @@ hr {
   border: none;
 }
 
+/* BLOG HERO */
+.blog-hero img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.bh-content {
+  position: relative;
+  top: -60vh;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+
+.bh-content h1 {
+  font-size: 15vh;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 4px black;
+  transition: ease 0.3s;
+}
+
+.bh-content h1:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+.bh-content p {
+  font-size: 4vw;
+}
+
+.bh-content button {
+  margin-top: 1rem;
+  height: 3.5rem;
+  width: 12rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #00affe;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.bh-content button:hover {
+  color: #fff;
+  background-color: #00affe;
+  transform: scale(1.1);
+}
+
+/* BLOG LEFT */
+
+.blog-container {
+  margin-top: -10rem;
+}
+
 .blog-left {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
 }
 
 .blog-left img {
@@ -83,7 +139,7 @@ hr {
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
 }
 
 .blog-right img {
