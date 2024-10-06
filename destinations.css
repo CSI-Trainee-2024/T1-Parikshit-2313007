@@ -203,6 +203,10 @@ video {
   justify-content: space-between;
 }
 
+.tg-card {
+  height: 24rem;
+}
+
 .tg-card img {
   object-fit: cover;
   width: 20rem;
@@ -256,7 +260,47 @@ video {
 }
 
 .tc {
-  margin-top: -4rem;
+  margin-top: 3rem;
   text-align: center;
   margin-bottom: 4rem;
+}
+
+.tg-card-lg {
+  width: 34rem;
+  height: 20rem;
+}
+
+.tg-card-lg img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.tg-rating-lg {
+  background-color: #fff;
+  padding: 1px 8px;
+  border-radius: 10px;
+  width: fit-content;
+  position: relative;
+  top: -21.5rem;
+  left: 1.5rem;
+}
+
+.tg-text-lg {
+  color: #fff;
+  position: relative;
+  top: -10rem;
+  left: 1.5rem;
+}
+
+.tg-text-lg h3 {
+  font-size: 1.6rem;
+}
+
+.tg-price {
+  display: flex;
+}
+
+.tg-price h4 {
+  margin-right: 6px;
 }
