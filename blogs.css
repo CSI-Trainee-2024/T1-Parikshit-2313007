@@ -1,0 +1,5 @@
+.blog-left img {
+  width: 20rem;
+  height: 40rem;
+  object-fit: cover;
+}
