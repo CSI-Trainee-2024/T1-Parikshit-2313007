@@ -1,5 +1,40 @@
+hr {
+  padding-top: 8rem;
+  border: none;
+}
+
+.blog-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
 .blog-left img {
-  width: 20rem;
-  height: 40rem;
+  width: 25rem;
+  height: 35rem;
   object-fit: cover;
+  border-radius: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-right: 4rem;
+  margin-left: 5rem;
+}
+
+.blog-content-right h1 {
+  font-family: "Comforter Brush", system-ui;
+  color: #333a73;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-content-right p {
+  color: #666666;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.blog-content-right p h {
+  color: #00affe;
+  cursor: pointer;
 }
