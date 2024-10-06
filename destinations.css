@@ -15,9 +15,10 @@ video {
   width: fit-content;
   color: #fff;
   position: relative;
-  top: -29vw;
+  top: -55vh;
   left: 10%;
   text-align: center;
+  overflow: hidden;
 }
 
 .content h1 {
@@ -39,8 +40,8 @@ video {
 
 .content button {
   margin-top: 1.3rem;
-  height: 3.5vw;
-  width: 12vw;
+  height: 3.5rem;
+  width: 12rem;
   font-size: 1.3rem;
   font-weight: 600;
   color: #00affe;
@@ -55,10 +56,43 @@ video {
   transform: scale(1.1);
 }
 
+@media (width<=752px) {
+  .content h1 {
+    font-size: 9vw;
+  }
+  .content p {
+    display: none;
+  }
+}
+
+@media (width<=450px) {
+  video {
+    height: 71vh;
+    width: 100vw;
+  }
+
+  .content {
+    top: -45vh;
+  }
+}
+
 /* OFFERS*/
 
+.view-all {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  padding-right: 4rem !important;
+  color: #544c4c !important;
+  cursor: pointer !important;
+}
+
 .offers .head1 {
-  margin-top: -8rem;
+  margin-top: -7vw;
+}
+
+.offers .head1 p {
+  /* font-size: 6vh; */
 }
 
 .offer-card-container {
@@ -110,32 +144,47 @@ video {
   border: #00affe 2px solid;
 }
 
-/* EXPLORE INDIA */
-
-.view-all {
-  font-family: "Poppins", sans-serif !important;
-  font-size: 1.5rem !important;
-  font-weight: 600 !important;
-  padding-right: 4rem !important;
-  color: #544c4c !important;
-  cursor: pointer !important;
+@media (width<=616px) {
+  .offer-card img {
+    display: none;
+  }
+  .offer-card {
+    min-width: 19.5rem;
+  }
+  .view-all {
+    display: none;
+  }
+  .offers .head1 p {
+    font-size: 5vh;
+  }
+  .destinations .head1 p {
+    font-size: 4vh;
+    text-wrap: nowrap;
+  }
+  .destinations .about {
+    width: 90%;
+  }
+  .destinations .head1 p span {
+    display: none;
+  }
 }
+
+/* EXPLORE INDIA */
 
 .d-card-container {
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 3rem;
 }
 
 .d-card {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 10px;
-  width: 20rem;
+  width: 45vh;
   padding: 7px;
-  margin-right: 2rem;
-  margin-left: 2rem;
-  margin-bottom: 1rem;
+  margin-left: 4vw;
   color: #333a73;
 }
 
@@ -184,6 +233,34 @@ video {
   color: #00affe !important;
   transform: scale(1.1) rotate(45deg);
   cursor: pointer;
+}
+
+@media (width<=1340px) {
+  .d-card {
+    max-width: 55vh;
+    width: 55vh;
+  }
+}
+
+@media (width<=1158px) {
+  .d-card {
+    width: 55vh;
+    max-width: 55vh;
+  }
+}
+
+@media (width<=1062px) {
+  .d-card {
+    max-width: 65vh;
+    width: 55vw;
+  }
+}
+
+@media (width<=728px) {
+  .d-card {
+    max-width: 70vh;
+    width: 75vw;
+  }
 }
 
 /* Tour Guide */
@@ -303,4 +380,56 @@ video {
 
 .tg-price h4 {
   margin-right: 6px;
+}
+
+@media (width<=1500px) {
+  .tg-card-lg {
+    width: 20rem;
+  }
+
+  .tg-card-lg img {
+    height: 23rem;
+    width: 20rem;
+  }
+}
+
+@media (width<=1199px) {
+  .tg-card-lg,
+  .tg-card {
+    width: 35vw;
+    height: 23rem;
+    margin-bottom: 5%;
+  }
+
+  .tg-card-lg img,
+  .tg-card img {
+    height: 23rem;
+    width: 35vw;
+    min-width: 18rem;
+  }
+}
+
+@media (width<=707px) {
+  .tg-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tg-card-lg,
+  .tg-card {
+    width: 65vw;
+    height: 23rem;
+    margin-bottom: 5%;
+    margin-left: -2rem;
+  }
+
+  .tg-card-lg img,
+  .tg-card img {
+    height: 23rem;
+    width: 65vw;
+    min-width: 18rem;
+  }
+  .tour-guide .head {
+    font-size: 9vw;
+  }
 }
