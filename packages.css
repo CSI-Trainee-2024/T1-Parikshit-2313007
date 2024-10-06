@@ -1,3 +1,16 @@
+.packages-hero {
+  margin-bottom: -8rem;
+}
+
+.bh-content .head {
+  font-size: 8vh;
+}
+
+.p-btn {
+  text-wrap: nowrap;
+  width: 15rem !important;
+}
+
 .p-card-container {
   display: flex;
   flex-wrap: wrap;
@@ -33,7 +46,7 @@
 }
 
 .p-card {
-  height: 72vh;
+  height: 79vh;
   width: 45vh;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 1.5rem;
