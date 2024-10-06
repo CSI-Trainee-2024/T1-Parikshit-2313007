@@ -1,0 +1,99 @@
+.p-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.packages-container .head1 p {
+  font-size: 3rem;
+}
+
+.p-nav {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  overflow: scroll;
+}
+
+.p-nav p {
+  width: fit-content;
+  text-wrap: nowrap;
+  margin: 0 1rem;
+  border: 2px solid #333a73;
+  border-radius: 3.5rem;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.p-nav p:hover {
+  color: #fff;
+  background-color: #333a73;
+}
+
+.p-card {
+  height: 72vh;
+  width: 45vh;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.p-card-text {
+  padding: 12px;
+}
+
+.p-card-text p {
+  font-size: 14px;
+  margin-top: 0.2rem;
+}
+
+.p-card-pricing {
+  text-align: end;
+  margin-right: 1rem;
+}
+
+.p-card-pricing button {
+  border: none;
+  background-color: #00affe;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+
+.p-card img {
+  width: 100%;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.p-price {
+  color: #333a73;
+}
+
+.p-card-pricing p {
+  color: #413b3b;
+  font-size: 13px;
+}
+
+@media (width<=620px) {
+  .p-card {
+    height: 90%;
+    padding-bottom: 1rem;
+    width: 60vh;
+    margin-bottom: 2rem;
+  }
+
+  .p-nav {
+    font-size: 1rem;
+  }
+
+  .packages-container .head1 p {
+    font-size: 2rem;
+  }
+  .p-nav p {
+    margin: 0 7px;
+  }
+}
