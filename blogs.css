@@ -11,14 +11,14 @@ hr {
 }
 
 .blog-left img {
-  width: 25rem;
-  height: 35rem;
+  width: 30%;
+  height: 70vh;
   object-fit: cover;
   border-radius: 2rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  margin-right: 4rem;
-  margin-left: 5rem;
+  margin-right: 4vw;
+  margin-left: 2vw;
   opacity: 1;
 }
 
@@ -29,22 +29,51 @@ hr {
   cursor: pointer;
 }
 
+.blog-content-right {
+  width: 80%;
+}
+
 .blog-content-right h1 {
   font-family: "Comforter Brush", system-ui;
   color: #333a73;
-  font-size: 4rem;
+  font-size: 400%;
   margin-bottom: 1.5rem;
 }
 
 .blog-content-right p {
   color: #666666;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
+  text-wrap: wrap;
 }
 
 .blog-content-right p h {
   color: #00affe;
   cursor: pointer;
+}
+
+.block {
+  display: block;
+}
+
+@media (width<=1002px) {
+  .blog-left {
+    display: block;
+    text-align: center;
+  }
+  .blog-content-right {
+    width: 100%;
+    text-align: left;
+  }
+  .blog-left img {
+    width: 70%;
+    height: 60vw;
+  }
+  .blog-content-right h1 {
+    font-size: 300%;
+    margin-top: 3rem;
+    text-align: center;
+  }
 }
 
 /* RIGHT IMAGE */
@@ -58,14 +87,14 @@ hr {
 }
 
 .blog-right img {
-  width: 25rem;
-  height: 35rem;
+  width: 30%;
+  height: 70vh;
   object-fit: cover;
   border-radius: 2rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  margin-right: 4rem;
-  margin-left: 5rem;
+  margin-right: 4vw;
+  margin-left: 2vw;
   opacity: 1;
 }
 
@@ -77,24 +106,49 @@ hr {
 }
 
 .blog-content-left {
-  margin-left: 5rem;
+  width: 80%;
+  margin-left: 4%;
 }
 
 .blog-content-left h1 {
   font-family: "Comforter Brush", system-ui;
   color: #333a73;
-  font-size: 4rem;
-  margin-top: 4rem;
+  font-size: 400%;
   margin-bottom: 1.5rem;
 }
 
 .blog-content-left p {
   color: #666666;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
+  text-wrap: wrap;
 }
 
 .blog-content-left p h {
   color: #00affe;
   cursor: pointer;
+}
+
+.block {
+  display: block;
+}
+
+@media (width<=1002px) {
+  .blog-right {
+    display: block;
+    text-align: center;
+  }
+  .blog-content-left {
+    width: 100%;
+    text-align: left;
+  }
+  .blog-right img {
+    width: 70%;
+    height: 60vw;
+  }
+  .blog-content-left h1 {
+    font-size: 300%;
+    margin-top: 3rem;
+    text-align: center;
+  }
 }
